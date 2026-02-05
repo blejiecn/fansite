@@ -8,12 +8,19 @@ body {
 
 /* 导航栏样式 */
 .header {
+    position: absolute;  /* 让导航栏浮动在页面的顶部 */
+    top: 0;
+    left: 0;
+    width: 100%;
     background-image: url('images/header.png');
     background-size: cover;
-    height: 100px; /* 导航栏的高度 */
+    background-position: center;
+    height: 30px; /* 导航栏的高度 */
     display: flex;
-    justify-content: center; /* 将内容居中 */
-    align-items: center; /* 将内容垂直居中 */
+    justify-content: center; /* 横向居中 */
+    align-items: center; /* 垂直居中 */
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景，使导航栏和背景更融合 */
+    z-index: 10; /* 确保导航栏在最上面 */
 }
 
 nav ul {
@@ -31,7 +38,7 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 20px; /* 设定字体大小 */
-    font-weight: bold;
+    font-weight: medium;
     transition: all 0.3s ease;
     text-transform: uppercase; /* 设置所有字母为大写 */
 }
