@@ -8,7 +8,7 @@ body {
 
 /* 导航栏样式 */
 .header {
-    background-image: url('header.png');
+    background-image: url('images/header.png');
     background-size: cover;
     height: 80px;
     display: flex;
