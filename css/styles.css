@@ -21,6 +21,10 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    background-image: url('images/banner.jpg'); /* 设置背景图片 */
+    background-size: cover; /* 背景图覆盖整个区域 */
+    background-position: center; /* 背景图居中 */
+    height: 300px; /* 设置 header 高度，适合显示背景图 */
 }
 
 header .logo h1 a {
