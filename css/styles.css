@@ -10,10 +10,10 @@ body {
 .header {
     background-image: url('images/header.png');
     background-size: cover;
-    height: 80px;
+    height: 100px; /* 导航栏的高度 */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* 将内容居中 */
+    align-items: center; /* 将内容垂直居中 */
 }
 
 nav ul {
@@ -24,20 +24,21 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 30px; /* 增加按钮之间的水平间距 */
 }
 
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 16px;
+    font-size: 20px; /* 设定字体大小 */
     font-weight: bold;
     transition: all 0.3s ease;
+    text-transform: uppercase; /* 设置所有字母为大写 */
 }
 
 nav ul li a:hover {
-    color: #ff6600;
-    font-size: 18px;
+    color: #ff6600; /* 悬停时文字颜色变为橙色 */
+    font-size: 24px; /* 悬停时字体变大 */
 }
 
 /* 主体 Banner样式 */
