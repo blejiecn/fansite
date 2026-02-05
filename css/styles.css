@@ -1,82 +1,13 @@
-/* 全局基础样式 */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-/* 容器和布局 */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    background-image: url('images/banner.jpg'); /* 设置背景图片 */
-    background-size: cover; /* 背景图覆盖整个区域 */
-    background-position: center; /* 背景图居中 */
-    height: 300px; /* 设置 header 高度，适合显示背景图 */
-}
-
-header .logo h1 a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 2em;
-    font-weight: 500;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 15px;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.2em;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Section 样式 */
-.section {
-    margin: 40px 0;
+/* Profile Section */
+#profile {
+    background-color: white;
     padding: 40px 0;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.section h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #333;
 }
 
 .profile-info {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+    justify-content: space-around;
+    margin-bottom: 30px;
 }
 
 .profile-photo img {
@@ -86,119 +17,116 @@ header nav ul li a:hover {
     object-fit: cover;
 }
 
-.profile-details p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #555;
-}
-
-.profile-details ul {
-    list-style: none;
-    padding: 0;
-}
-
-.profile-details ul li {
+.profile-details h2 {
+    font-size: 1.8em;
     margin: 10px 0;
 }
 
-.profile-details ul li a {
-    color: #0073e6;
-    text-decoration: none;
-}
-
-.profile-details ul li a:hover {
-    text-decoration: underline;
-}
-
-.timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.event {
-    padding: 15px;
-    border-left: 5px solid #0073e6;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    position: relative;
-    font-size: 1.1em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.event.future {
-    border-left-color: #28a745;
-}
-
-.event.past {
-    border-left-color: #dc3545;
-}
-
-.event a {
-    display: block;
-    color: #0073e6;
-    text-decoration: none;
-    margin-top: 10px;
-}
-
-.event a:hover {
-    text-decoration: underline;
-}
-
-.show p,
-.live-event p {
+.profile-details p {
     font-size: 1.1em;
     color: #555;
 }
 
-.show a,
-.live-event a {
-    color: #0073e6;
-    text-decoration: none;
-    font-weight: bold;
+/* 横线 */
+.underline {
+    width: 100%;
+    height: 3px;
+    background-color: #333; /* 黑色横线 */
+    margin: 10px 0;
 }
 
-.show a:hover,
-.live-event a:hover {
-    text-decoration: underline;
+/* ×形状图形 */
+.cross-shape {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
+.cross-shape:before, .cross-shape:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 3px;
+    background-color: #333; /* 黑色线条 */
+    transform: translate(-50%, -50%);
+}
+
+.cross-shape:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.cross-shape:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* 粉色线条 */
+.cross-shape .pink-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 3px;
+    background-color: pink; /* 粉色线条 */
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Schedule Section */
+#schedule {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.schedule-item {
+    display: flex;
+    justify-content: space-around;
+}
+
+.schedule-card {
+    width: 45%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.schedule-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.event-info {
+    margin-top: 10px;
     text-align: center;
-    padding: 15px 0;
-    margin-top: 40px;
 }
 
-footer p {
-    margin: 0;
-    font-size: 1.1em;
+/* 日期标签 */
+.date-label {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background-color: #d4a81d; /* 黄色背景 */
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
-/* 响应式设计 */
-@media (max-width: 768px) {
-    header nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+/* 趋势词条标签 */
+.trending-tag {
+    display: inline-block;
+    background-color: #d4a81d; /* 黄色背景 */
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
 
-    .profile-info {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .profile-photo img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .timeline {
-        flex-direction: column;
-    }
-
-    .event {
-        font-size: 1em;
-    }
+.trending-tag:hover {
+    background-color: #b17b16; /* 悬停效果 */
 }

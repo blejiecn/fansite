@@ -5,104 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BleJie 资料站</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Banner Section -->
     <header>
-        <div class="container">
-            <div class="logo">
-                <h1><a href="/">BleJie 资料站</a></h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#profile">个人资料</a></li>
-                    <li><a href="#schedule">行程表</a></li>
-                    <li><a href="#shows">剧集资料</a></li>
-                    <li><a href="#live">直播资源</a></li>
-                </ul>
-            </nav>
+        <div class="banner">
+            <img src="images/banner.jpg" alt="Banner Image">
+        </div>
+        <div class="site-title">
+            <h1>BleJie 资料站</h1>
+            <p>When our hands touch, when our lips meet, our bodies grow warmer and our hearts begin to race. We will still meet.</p>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Profile Section -->
-        <section id="profile" class="section">
-            <div class="container">
-                <h2>BleJie 个人资料</h2>
-                <div class="profile-info">
-                    <div class="profile-photo">
-                        <img src="images/profile.jpg" alt="BleJie Profile Photo">
-                    </div>
-                    <div class="profile-details">
-                        <p>BleJie是一对极具魅力的偶像组合，深受粉丝喜爱。</p>
-                        <ul>
-                            <li><a href="https://www.instagram.com/BleJie" target="_blank">Instagram</a></li>
-                            <li><a href="https://twitter.com/BleJie" target="_blank">Twitter</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Schedule Section -->
-        <section id="schedule" class="section">
-            <div class="container">
-                <h2>BleJie 行程表</h2>
-                <div class="timeline">
-                    <div class="event future">
-                        <p>2026年2月10日 - 粉丝见面会</p>
-                        <a href="https://officiallink.com">官方发布链接</a>
-                    </div>
-                    <div class="event past">
-                        <p>2026年1月25日 - 直播演唱会</p>
-                        <a href="https://officiallink.com">刷趋公告</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Shows Section -->
-        <section id="shows" class="section">
-            <div class="container">
-                <h2>BleJie 剧集资料</h2>
-                <div class="show">
-                    <p><strong>剧集名：</strong>《ClaireBell》</p>
-                    <p><strong>简介：</strong>小监狱。</p>
-                    <a href="https://youtube.com/official-show" target="_blank">观看剧集</a>
-                    <p>下载未删减版：<a href="https://oned.com" target="_blank">OneD平台</a></p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Live Section -->
-        <section id="live" class="section">
-            <div class="container">
-                <h2>BleJie 直播资源</h2>
-                <div class="live-events">
-                    <div class="live-event">
-                        <p><strong>2026年2月5日 - 直播演唱会</strong></p>
-                        <a href="https://bilibili.com/official-live">观看直播</a>
-                    </div>
-                    <div class="live-event">
-                        <p><strong>2026年1月30日 - 直播采访</strong></p>
-                        <a href="https://bilibili.com/official-interview">观看直播</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
+    <!-- Profile Section -->
+    <section id="profile">
         <div class="container">
-            <p>&copy; 2026 BleJie资料站</p>
+            <div class="profile-info">
+                <div class="profile-photo">
+                    <img src="images/profile_0.jpg" alt="BleJie">
+                </div>
+                <div class="profile-details">
+                    <h2>Mable</h2>
+                    <p>生日：1997年4月23日</p>
+                    <p>身高/体重：169cm/50kg</p>
+                    <p>MBTI：ENTJ</p>
+                </div>
+            </div>
+    <!-- X形状 -->
+            <div class="cross-shape">
+                <div class="line black"></div>
+                <div class="line pink"></div>
+            </div>
+            <div class="profile-info">
+                <div class="profile-details">
+                    <h2>Pangjie</h2>
+                    <p>生日：2005年8月16日</p>
+                    <p>身高/体重：164cm/44-46kg</p>
+                    <p>MBTI：ENTJ-T / ENFJ</p>
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
 
-    <script src="js/script.js"></script>
+    <!-- Schedule Section -->
+    <section id="schedule">
+        <div class="container">
+            <h2>行程表</h2>
+            <div class="schedule-item">
+                <div class="schedule-card">
+                    <div class="date-label">2月4日</div> <!-- 日期标签 -->
+                    <img src="images/schedule/20060204_0.jpg" alt="Event 1">
+                    <div class="event-info">
+                        <p>CALVIN KLEIN PERFUME EVENT</p>
+                        <p>2月4日 15:00 - 17:00</p>
+                        <a href="#" class="trending-tag">趋势词条</a> <!-- 超劲词条 -->
+                    </div>
+                </div>
+                <div class="schedule-card">
+                    <div class="date-label">2月9日</div> <!-- 日期标签 -->
+                    <img src="images/schedule/20060209_0.jpg" alt="Event 2">
+                    <div class="event-info">
+                        <p>MITR X CHATO BUCKET BAG EVENT</p>
+                        <p>2月9日 15:00 - 17:00</p>
+                        <a href="#" class="trending-tag">超劲词条</a> <!-- 超劲词条 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Section -->
+    <section id="events">
+        <div class="container">
+            <h2>更多动态</h2>
+            <div class="event-card">
+                <img src="images/cut/260203_stream_0.jpg" alt="Tiktok Live">
+                <div class="event-info">
+                    <p>Tiktok直播</p>
+                    <p>2月3日</p>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="images/cut/260204_live_0.jpg" alt="Tiktok Live">
+                <div class="event-info">
+                    <p>CK香水站台</p>
+                    <p>2月4日</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
-
